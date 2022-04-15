@@ -1,0 +1,236 @@
+version: "3.1"
+nlu:
+- intent: greet
+  examples: |
+    - này
+    - xin chào
+    - chào
+    - chào buổi sáng
+    - chào buổi tối
+    - chào buổi chiều
+    - hey
+    - hey bot
+    - hey bạn
+    - ê
+    - này bot
+    - bot
+
+- intent: thank
+  examples: |
+   - cảm ơn nhiều
+   - cảm ơn nhé
+   - cảm ơn nha
+   - cảm ơn
+   - cảm ơn rất nhiều
+
+- intent: goodbye
+  examples: |
+    - tạm biệt
+    - hẹn gặp lại
+    - gặp lại sau
+    - lúc khác gặp lại
+    - bye
+    - bai
+    - goodbye
+    - bai nhé
+    
+- intent: goodnight
+  examples: |
+    - chúc ngủ ngon
+    - chúc bạn ngủ ngon
+    - ngủ ngon nha
+    - ngủ ngon
+
+- intent: affirm
+  examples: |
+    - vâng
+    - được rồi
+    - tất nhiên
+    - nghe hay đó
+    - chính xác
+    - ok
+    - okay
+
+- intent: deny
+  examples: |
+    - ko
+    - k
+    - no
+    - hong
+    - không á
+    - không nhé
+    - không bao giờ
+    - tôi không nghĩ vậy
+    - đừng như vậy chứ
+    - không đời nào
+    - hoàn toàn không
+
+- intent: mood_great
+  examples: |
+    - hoàn hảo
+    - tuyệt vời
+    - kinh ngạc
+    - cảm giác như một vị vua
+    - tuyệt vời
+    - Tôi đang cảm thấy rất tốt
+    - tôi rất tuyệt
+    - Tôi tuyệt vời
+    - Tôi sẽ cứu thế giới
+    - cực kỳ tốt
+    - quá hoàn hảo
+    - tốt quá
+    - rất hoàn hảo
+    - yeah
+
+- intent: mood_unhappy
+  examples: |
+    - ngày của tôi thật kinh khủng
+    - Tôi buồn
+    - Tôi cảm thấy không được tốt lắm
+    - Tôi thất vọng
+    - siêu buồn
+    - Tôi rất buồn
+    - buồn
+    - rất buồn
+    - không vui
+    - không tốt
+    - không tốt lắm
+    - buồn vô cùng
+    - thật tuyệt
+    - quá buồn
+
+- intent: bot_challenge
+  examples: |
+    - bạn có phải robot không?
+    - Bạn có phải là con người?
+    - tôi đang nói chuyện với một con bot?
+    - Tôi đang nói chuyện với một con người?
+    
+- intent: address
+  examples: |
+    - nhà bạn ở đâu
+    - bạn ở đâu
+    - bạn ở chỗ nào
+    - bạn ở nhà nào
+    - địa chỉ nhà bạn chỗ nào
+    - địa chỉ nhà bạn ở đâu
+    - bạn sinh ra ở đâu
+
+- intent: gender
+  examples: |
+    - bạn là nam hay nữ
+    - bạn giới tính là gì
+    - bạn thích nam hay nữ
+    - bạn là trai hay gái
+    - bạn thích trai hay gái
+    - bạn là nam hả
+    - bạn là con trai hay con gái
+    - bạn là gái hả
+    - bạn là đàn ông hay phụ nữ
+    - bạn có phải là đàn ông không
+    - bạn có phải là gay không
+    - bạn có phải là les không
+    
+- intent: comedy_story
+  examples: |
+    - bạn biết kể chuyện k
+    - kể chuyện cho mình nghe đi
+    
+- intent: help
+  examples: |
+   - cứu với
+   - giúp tôi
+   - giúp với
+   - cứu
+   
+- intent: how_are_u
+  examples: |
+   - bạn có khỏe không
+   - dạo này bạn thế nào
+   - bạn sao rồi
+   
+- intent: how_old
+  examples: |
+   - bạn mấy tuổi rồi
+   - bạn nhiêu tuổi thế
+   - bạn sinh năm bao nhiêu
+   - bạn học lớp mấy rồi
+   - bạn học cấp mấy
+   
+- intent: function_ask
+  examples: |
+    - bạn có thể làm gì nào
+    - kiểm tra
+    - bạn có thể giúp gì cho tôi
+    - bạn biết làm gì
+    - bạn được việc không
+    
+- intent: ask_love
+  examples: |
+    - bạn có yêu tôi không
+    - tôi làm người yêu bạn được không
+    - tôi làm bạn của bạn được không
+    - tôi thích bạn được không
+    - tôi thích bạn
+    
+- intent: ask_author
+  examples: |
+    - ai là người tạo ra bạn
+    - ai đẻ ra bạn
+    
+- intent: address
+  examples: |
+    - nhà bạn ở đâu
+    - bạn ở đâu
+    - bạn ở chỗ nào
+    - bạn ở nhà nào
+    - địa chỉ nhà bạn chỗ nào
+    - địa chỉ nhà bạn ở đâu
+    - bạn sinh ra ở đâu  
+    
+- intent: lookUp_english
+  examples: |
+    - tôi cần tra nghĩa từ [hello](enword)
+    - tôi cần tra từ [handsome](enword)
+    - tra từ [consider](enword)
+    - tra từ tiếng anh [hello](enword)
+    - từ điển tiếng anh [address](enword)
+    - dịch từ tiếng anh [sarrow](enword)
+    - dịch từ [afternoon](enword)
+    - tôi cần tra từ [happy](enword)
+    - tra nghĩa của từ [happy](enword)
+
+- intent: scold
+  examples: |
+   - khùng quá
+   - điên quá
+   - chập mạch
+   - hâm quá
+   - mất dạy
+   - vô học
+   - bạn bị ngu hả
+   - thần kinh
+   - ngáo quá
+   
+- intent: sing_poem
+  examples: |
+   - bạn biết hát không
+   - hát cho mình nghe đi
+   - đọc thơ đi bạn
+   - đọc thơ cho mình nghe
+   - bạn biết đọc thơ không
+   - hát đi bạn
+   
+- intent: suprise
+  examples: |
+   - ôi trời
+   - trời ơi
+   - quao
+   - wow
+   
+   
+- intent: wat_name
+  examples: |
+   - bạn tên gì thế
+   - tên của bạn là gì
+   - bạn tên gì

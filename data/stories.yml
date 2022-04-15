@@ -1,0 +1,123 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: sadly goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  
+- story: fallback
+  steps:
+  - action: utter_default
+  
+- story: say introduce
+  steps: 
+  - intent: introduce
+  - action: utter_introduce
+  
+- story: goodnight
+  steps:
+  - intent: goodnight
+  - action: utter_happy
+  - action: utter_goodbye
+  
+- story: look up dictionary
+  steps:
+  - intent: lookUp_english
+  - action: actionen
+  
+- story: ask relationship
+  steps: 
+  - intent: ask_relationship
+  - action: utter_reply_relationship
+  
+- story: ask about love
+  steps:
+  - intent: ask_love
+  - action: utter_reply_love
+  - action: utter_askthanks
+  
+- story: ask information
+  steps:
+  - intent: wat_name
+  - action: utter_wat_name
+  - intent: how_old
+  - action: utter_how_old
+  - intent: gender
+  - action: utter_gender
+  - intent: address
+  - action: utter_address
+
+- story: how old
+  steps:
+  - intent: how_old
+  - action: utter_how_old
+  - action: utter_askthanks
+  
+- story: ask gender
+  steps:
+  - intent: gender
+  - action: utter_gender
+  - action: utter_askthanks
+  
+- story: sing poem
+  steps:
+  - intent: sing_poem
+  - action: utter_sing_poem
+  - action: utter_askthanks
+  
+- story: comedy_story
+  steps:
+  - intent: comedy_story
+  - action: utter_comedy_story
+  - action: utter_thanks
+  
+- story: affirm
+  steps:
+  - intent: affirm
+  - action: utter_nextwork
+  
+- story: scold
+  steps:
+  - intent: scold
+  - action: utter_scold
+  - action: utter_hurt
+  
+- story: how are up
+  steps:
+  - intent: how_are_u
+  - action: utter_how_are_u
+  
+- story: function ask
+  steps:
+  - intent: function_ask
+  - action: utter_function_ask
+  - action: utter_askthanks

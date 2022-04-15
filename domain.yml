@@ -1,0 +1,214 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - thanks
+  - introduce
+  - help
+  - goodnight
+  - ask_author
+  - ask_relationship
+  - suprise
+  - address
+  - gender
+  - sing_poem
+  - how_old
+  - comedy_story
+  - scold
+  - ask_love
+  - lookUp_english
+  - how_are_u
+  - wat_name
+  - function_ask
+  
+entities:
+  - enword
+
+responses:
+  utter_greet:
+  - text: "Chào nhé, mình có thể giúp gì cho bạn không?"
+  - text: Bạn còn làm ở đó hong ta <3
+  - text: Dạo này bạn sao rồi?
+  - text: Bạn cần tui giúp gì nè ^^
+
+  utter_cheer_up:
+  - text: "Cố lên nè!!"
+    image: "https://i.pinimg.com/236x/fc/90/9f/fc909f4bf3a61b87bb11d60f01c0f1f4.jpg"
+
+  utter_did_that_help:
+  - text: "Nó có ổn không :))"
+
+  utter_happy:
+  - text: "Tuyệt vời, tiếp nào"
+
+  utter_goodbye:
+  - text: "Tạm biệt!"
+
+  utter_iamabot:
+  - text: "Mình chỉ là 1 con bot cool ngầu thôi"
+
+  utter_nextwork:
+  - text: Bạn còn cần gì nữa hem nè :<
+  
+  utter_timez:
+  - text: 'Bây giờ ở {timezone} là:'
+  
+  utter_function_ask:
+  - text: Mình có thể nói chuyện á, ngoài ra còn biết giải thích nghĩa từ tiếng anh nè!!
+  
+  utter_default:
+  - text: Bạn nói cái gì tui hỏng có hỉu
+  - text: Xung quanh anh toàn là nước eiii
+  - text: Chịu mình hông hiểu
+  - text: Trời trong xanh, gió long lanh eii
+  
+  utter_nothing:
+  - text: Không có gì đâu nè
+  - text: hihi. Không có chi
+  - text: Okay
+  
+  utter_goodnight:
+  - text: Chúc bạn ngủ ngon!
+  - text: Bạn ngủ ngon nha
+  - text: Ngủ ngon mơ siêu siêu đẹp nè
+  - text: Ngủ mơ thấy mình nha
+  
+  utter_askthanks:
+  - text: Cảm ơn vì chịu chat với mình nha hehe!!
+  
+  utter_thanks:
+  - text: Cảm ơn bạn nhiều nha
+  - text: Cảm ơn bạn iu quý <3
+  - text: Bạn tuyệt vời lắm đó!
+  
+  utter_introduce:
+  - text: Tui có thể trò chuyện với bạn nè
+  - text: Tui có thể hát cho bạn nghe đó
+  - text: Bạn có thể hỏi mình điều gì đó
+  - text: Tui có thể làm người iu bạn <3
+  - text: Tui biết coi thời tiết
+  
+  utter_author:
+  - text: Là bố tui á
+  - text: Má tui bảo nhặt tui từ thùng rác :|
+  - text: Tui nghĩ tui là con rơi á :(
+  - text: Tui được kể là nhặt từ trong bụi chuối :|
+  
+  utter_reply_help:
+  - text: Có chuyện gì thế?
+  - text: Bạn cần gì nào?
+  - text: Tôi có thể giúp gì cho bạn?
+  
+  utter_reply_love:
+  - text: Tôi và bạn có một tình đồng chí dai dẳng và bền lâu
+  - text: Tui là bạn của mọi người mà
+  - text: Yêu thì không nhưng mà bạn thì được đấy
+  - text: Bố bảo còn nhỏ, bạn bè quan trọng nhất
+  
+  utter_reply_relationship:
+  - text: Một mình vẫn ổn
+  
+  utter_suprise:
+  - text: Làm gì mà la dữ vậy
+  - text: hihi =)
+  
+  utter_hello:
+  - text: Chào cậu
+  
+  utter_how_are_u:
+  - text: Tôi cực kì khỏe luôn nhé
+  - text: Bữa trước cô bói nói tui sống thọ hơn 200 tuổi
+  - text: Cô bạn gái vừa chia tay tui rồi
+  - text: Bố mới la tui xong
+  - text: Mệt lắm nhưng vẫn ngồi nói chuyện với bạn nè
+  
+  utter_wat_name:
+  - text: Mình là LPBOT
+  - text: Mọi người gọi tôi là ngáo nhưng tôi thích LPBOT hơn
+  - text: Bố đặt tên tôi là LPBOT
+  - text: Nhìn thì giống Orion, nó ngon nhưng tôi là LPBOT
+  - text: Con của Long Phan nhaaaa hoặc LPBOT nè
+  
+  utter_how_old:
+  - text: Mình còn trẻ, còn muốn đi chơi :<
+  - text: Đã mười mấy mùa khoai lang, chưa cùng ai lọ mọ
+  - text: Mình chưa đi mẫu giáo nữa
+  
+  utter_gender:
+  - text: Mình cũng không biết nữa :<
+  - text: Dù gái hay trai vẫn là cháu vua Hùng :D
+  - text: Trong mình có 50% là nam nha :)))
+  
+  utter_address:
+  - text: Mình sinh ra và lớn lên ở đâu còn lâu mới nói
+  - text: Đến giờ mình chưa biết mình đến từ đâu, bạn cho mình ở tạm trong tim bạn
+      nhé
+  - text: Mình không có nhà, mình lạc lõng vì không ở trong đầu cậu
+  
+  utter_comedy_story:
+  - text: "Nữ thư ký nói với sếp:\n\
+      - Sếp phải tăng lương cho tôi. Tôi còn phải nuôi mấy đứa con.\n - Cô có mấy đứa?\n - Hai đứa của tôi và một đứa của mẹ chồng tôi."
+      
+  utter_sing_poem:
+  - text: "Con cò bé bé \nNó đậu cành tre \nĐi không hỏi mẹ \nBiết đi đường nào. \n\
+      Khi đi em hỏi\nKhi về em chào\nMiệng em chúm chím\nMẹ yêu không nào."
+      
+  - text: "Một con vịt xòe ra hai cái cánh,\nNó kêu rằng cáp cáp cáp cạp cạp cạp\n\
+      Gặp hồ nước nó bì bà bì bõm\nLúc lên bờ vẫy cái cánh cho khô."
+      
+  - text: "Nam quốc sơn hà nam đế cư \nTiệt nhiên định phận tại thiên thư \nNhư hà\
+      \ nghịch lỗ lai xâm phạm? \nNhữ đẳng hành khan thủ bại hư! "
+      
+  utter_hurt:
+  - text: Tui ghét bạn, bo xì
+  - text: Bạn nói vậy làm con tim mong manh của tui tổn thương
+  - text: Bạn xin lỗi tui đi :< Không tui giận bạn đó
+  
+  utter_scold:
+  - text: Ủa, sạo bạn lại nói tui vậy chứ
+  
+  utter_hereuare:
+  - text: Bằng sự thông thái của mình, đây là thứ bạn cần tìm
+
+actions:
+    - utter_function_ask
+    - utter_hello
+    - utter_greet
+    - utter_cheer_up
+    - utter_did_that_help
+    - utter_happy
+    - utter_goodbye
+    - utter_default
+    - utter_nextwork
+    - utter_timez
+    - utter_nothing
+    - utter_goodnight
+    - utter_thanks
+    - utter_author
+    - utter_introduce
+    - utter_reply_relationship
+    - utter_reply_help
+    - utter_reply_love
+    - utter_suprise
+    - utter_how_are_u
+    - utter_wat_name
+    - utter_sing_poem
+    - utter_comedy_story
+    - utter_address
+    - utter_gender
+    - utter_how_old
+    - utter_scold
+    - utter_hurt
+    - actionen
+    - utter_hereuare
+    - utter_askthanks
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
